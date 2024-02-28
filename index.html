@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+
+    <!-- Rating state start -->
+    <h1>Rating</h1>
+    <main>
+      <article id="rating-card" class="rating-card visible">
+        <img class="icon" alt="star" src="./images/icon-star.svg" />
+        <h2>How did we do?</h2>
+      
+        <p class="feedback-text">
+          Please let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!
+        </p>
+        
+        <form action="#" id="rating-form">        
+          <div class="numbers">
+            <input type="radio" name="rating" id="no1" value="1" />
+            <label for="no1" class="rating-number">1</label>
+            
+            <input type="radio" name="rating" id="no2" value="2" />
+            <label for="no2" class="rating-number">2</label>
+
+            <input type="radio" name="rating" id="no3" value="3" />
+            <label for="no3" class="rating-number">3</label>          
+
+            <input type="radio" name="rating" id="no4" value="4" />
+            <label for="no4" class="rating-number">4</label>          
+
+            <input type="radio" name="rating" id="no5" value="5" />
+            <label for="no5" class="rating-number">5</label>          
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+
+        
+      </article>
+      <!-- Rating state end -->
+    
+      <!-- Thank you state start -->
+      <article id="thank-you-card" class="thank-you-card hidden">    
+        <img class="thank-you-img" alt="mobile phone with paper" src="./images/illustration-thank-you.svg" />
+        <h3 id="how-many-selected">You selected 4 out of 5</h3>
+      
+        <h2>Thank you!</h2>
+      
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need more support,
+          don’t hesitate to get in touch!
+        </p>
+      
+        <!-- Thank you state end -->
+      </article>
+
+    </main>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/rokandic" target="_blank">Rok Andic</a>.
+    </div>
+    
+    <!-- Submit script -->
+    <script src="./js/submitForm.js"></script>
+  </body>
+</html>
