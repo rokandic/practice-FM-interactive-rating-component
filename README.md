@@ -17,7 +17,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 ### Links
 
-- [Live Site]()
+- [Live Site](https://rokandic.github.io/practice-FM-interactive-rating-component/)
 
 ### Built with
 
