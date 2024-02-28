@@ -9,9 +9,11 @@ function submit(event) {
   let inputs = document.querySelectorAll(".numbers input");
   for(const i of inputs) {
     if(i.checked) {
-      rating = i.value; 
+      rating = i.value;       
+      break;
     };
   }
+
   if(rating<0) {
     alert("Please rate before submitting.");
     return -1;
@@ -29,7 +31,7 @@ function displayThankYou(rating) {
 
   selectedText.textContent = `You selected ${rating} out of 5`;
 
-  ratingCard.classList.toggle('visible');
+  ratingCard.classList.toggle('visible',);
   ratingCard.classList.toggle('hidden');
 
   thankYouCard.classList.toggle('hidden');
